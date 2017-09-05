@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hmm.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#f2f2f2" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/hmm"
+        android:text="                      "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#274253"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/invalidView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Invalid ID"
+        android:textSize="18dp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/passT"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/userT"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:hint="Password"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passT"
+        android:layout_centerHorizontal="true"
+        android:text="Remember Me" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Click Here to Create an Account"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/userT"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/passT"
+        android:layout_alignRight="@+id/passT"
+        android:layout_below="@+id/invalidView"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:ems="10"
+        android:hint="User Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/ButtonText"
+        android:background="@drawable/blue_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/remember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:typeface="serif" />
+
+</RelativeLayout>

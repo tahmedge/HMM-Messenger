@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:id="@+id/signUpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/profFullnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Get Started With HMM"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#37291A"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profFullnm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Fill this form"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#37291A"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/phoneField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullName"
+            android:layout_below="@+id/unameField"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Phone No." />
+
+        <EditText
+            android:id="@+id/unameField"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullName"
+            android:layout_alignRight="@+id/phoneField"
+            android:layout_below="@+id/fullName"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="User Name" >
+
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/passField"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phoneField"
+            android:layout_alignRight="@+id/phoneField"
+            android:layout_below="@+id/phoneField"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/submit"
+            android:background="@drawable/blue_button"
+        style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Submit"
+            android:textSize="16dp"
+         	android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/profFullnm"
+            android:layout_below="@+id/ack2"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/ack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="..."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

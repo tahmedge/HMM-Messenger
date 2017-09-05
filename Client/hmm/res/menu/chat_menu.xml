@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:id="@+id/action_sendImage"
+          android:icon="@drawable/sharepic3"
+          android:title="@string/action_sendImage"
+          android:showAsAction="always" />
+        <item android:id="@+id/action_sendFile"
+          android:icon="@drawable/sharefile2"
+          android:title="@string/action_sendFile"
+          android:showAsAction="always" />
+
+</menu>

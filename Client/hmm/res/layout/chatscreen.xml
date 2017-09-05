@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+     
+    <!-- Single ListItem -->
+     
+    <!-- Product Name -->
+    <ScrollView android:id="@+id/scroll"
+	    android:layout_width="fill_parent"
+	    android:layout_height="414dp"
+	    android:background="@drawable/texture21"
+	    android:layout_y="0dp">
+	    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/chatContainer" >   
+    	</LinearLayout>
+       
+    </ScrollView> 
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_y="0dp"
+        android:background="#E2E2E2" >
+	    <ImageButton
+	        android:id="@+id/recSound"
+	        android:layout_width="50dp"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text=""
+	        android:src="@drawable/mic03"
+	         />
+
+	    <ImageButton
+	        android:id="@+id/sendButton"
+	        android:layout_width="50dp"
+	        android:layout_height="fill_parent"
+	        android:layout_toLeftOf="@+id/recSound"
+	        android:layout_alignParentBottom="true"
+	        android:src="@drawable/send4"
+	        android:text="" />
+
+	    <EditText
+	        android:id="@+id/chatWrite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toRightOf="@+id/emo"
+	        android:layout_toLeftOf="@+id/sendButton"
+	        android:ems="10"
+	        android:hint="Write here ..."
+	        android:lines="1"
+	        android:maxLines="1"
+	        android:singleLine="true" >
+			
+	        <requestFocus />
+	    </EditText>
+
+	    <ImageButton
+	        android:id="@+id/emo"
+	        android:layout_width="50dp"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/emo4"
+	        android:gravity="center_horizontal"
+	        />
+	    
+        
+    </RelativeLayout>   
+ 
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+     
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Friends.."
+        android:inputType="textVisiblePassword"/>
+  
+    <!-- List View -->
+    <ListView
+        android:id="@+id/list_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+  
+</LinearLayout>

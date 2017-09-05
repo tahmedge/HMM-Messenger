@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/container2"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    <!-- Single ListItem -->
+     
+    <!-- Product Name -->
+    <ScrollView android:id="@+id/scroll2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="402dp"
+	    android:layout_y="0dp">
+	    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/texture21"
+        
+        android:id="@+id/chatContainer2" >   
+    	</LinearLayout>
+       
+    </ScrollView> 
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:layout_y="0dp" >
+
+	    <Button
+	        android:id="@+id/sendButton2"
+	        android:layout_width="42dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text=">" />
+
+	    <EditText
+	        android:id="@+id/chatWrite2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/sendButton2"
+	        android:ems="10" >
+
+	        <requestFocus />
+	    </EditText>
+        
+    </RelativeLayout>   
+ 
+</LinearLayout>
